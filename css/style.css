@@ -1,0 +1,40 @@
+:root {
+    --background: #8f9196;
+    --primary: #1e50ff;
+    --secondary: #272d37;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* Nav Bar */
+.navbar {
+    display: flex;
+    padding: 0;
+    background: var(--background);
+    background-size:cover;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    margin: 0;
+}
+.menu {
+    display: flex; 
+    margin-right: 1rem;
+}
+.menu li a{
+    color: aliceblue;
+    padding: 1rem;
+}
+.menu li a:hover{
+    color: var(--secondary);
+}
+/* Fin Nav Bar */
+
