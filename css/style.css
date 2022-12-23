@@ -4,26 +4,30 @@
     --secondary: #272d37;
 }
 
-*{
+* {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     list-style-type: none;
+
 }
-body{
-    background: linear-gradient(/*  #0f1a1c */#e9eded, #67676e, #000000);
+
+body {
+    background: linear-gradient(#e9eded, #67676e, #000000);
     background-repeat: no-repeat;
     height: 100vw;
 }
+
 /* Nav Bar */
 .navbar {
     display: flex;
     padding: 0;
     background: var(--secondary);
-    background-size:cover;
+    background-size: cover;
     align-items: center;
     justify-content: space-between;
-    box-shadow:#67676e;
+    box-shadow: #67676e;
 }
+
 .logo {
     width: 3rem;
     height: 3rem;
@@ -31,25 +35,119 @@ body{
     margin: 0;
     margin-left: 5rem;
 }
+
 .menu {
-    display: flex; 
+    display: flex;
     margin-right: 5rem;
 }
-.menu li a{
+
+.menu li a {
     color: aliceblue;
     padding: 1rem;
 }
-.menu li a:hover{
+
+.menu li a:hover {
     color: var(--primary);
 }
+
 .active {
-    font-size:medium;
+    font-size: medium;
 }
+
 /* Fin Nav Bar */
 
 /* Hero */
-.hero{
+#hero {
+    margin-top: 5rem;
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 
+.Hero-info {
+    display: block;
+    align-content: center;
+    justify-content: center;
+    margin-left: 10rem;
+}
+
+.Hero-info h1 {
+    font-size: 48px;
+    width: 80%;
+    min-width: 500px;
+    font-weight: 800;
+    color: whitesmoke;
+    text-shadow: #000000;
+}
+
+.Hero-info p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.hero-img {
+    width: 500px;
+    margin-left: 2rem;
+    background: var(--secondary);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+#btns .more {
+    color: whitesmoke;
+    background-color: var(--primary);
+    width: 120px;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 14px;
+    text-align: center;
+}
+
+#btns .contact {
+    color: whitesmoke;
+    background-color: var(--primary);
+    width: 120px;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 14px;
+    text-align: center;
+}
+
+#btns .more a {
+    text-decoration: none;
 }
 
 /* fin Hero */
+
+/* sticky */
+
+#info {
+    display: flex;
+    background: #272d37;
+    opacity: 30%;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    width: 35rem;
+}
+
+#info p {
+    color: whitesmoke;
+}
+
+#info {
+    position: fixed;
+    top: 70%;
+    left: 90%;
+    transform: translate( -80%);
+}
