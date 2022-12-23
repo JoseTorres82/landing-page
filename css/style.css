@@ -9,15 +9,20 @@
     text-decoration: none;
     list-style-type: none;
 }
-
+body{
+    background: linear-gradient(/*  #0f1a1c */#e9eded, #67676e, #000000);
+    background-repeat: no-repeat;
+    height: 100vw;
+}
 /* Nav Bar */
 .navbar {
     display: flex;
     padding: 0;
-    background: var(--background);
+    background: var(--secondary);
     background-size:cover;
     align-items: center;
     justify-content: space-between;
+    box-shadow:#67676e;
 }
 .logo {
     width: 3rem;
@@ -35,10 +40,16 @@
     padding: 1rem;
 }
 .menu li a:hover{
-    color: var(--secondary);
+    color: var(--primary);
 }
 .active {
     font-size:medium;
 }
 /* Fin Nav Bar */
 
+/* Hero */
+.hero{
+
+}
+
+/* fin Hero */
