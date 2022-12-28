@@ -71,7 +71,6 @@
      padding-bottom: 2rem;
      /* max-width: 1200px; */
      margin: 0 auto;
-     
      /* background: linear-gradient( to left,  rgb(236, 236, 16), rgb(248, 140, 7)); */
      background: linear-gradient(to left, darkblue, rgb(152, 233, 152)/* , rgb(243, 243, 72)  */);
      background-size: cover;
@@ -93,7 +92,7 @@
      font-weight: 700;
      font-style: bold;
      color: white;
-     text-transform: uppercase;
+     /* text-transform: uppercase; */
  }
 
  .Hero-info p {
@@ -102,7 +101,7 @@
      font-size: 30px;
      padding: 25px;
      text-align: left;
-     text-transform: uppercase;
+     /* text-transform: uppercase; */
  }
 
  .hero-img {
