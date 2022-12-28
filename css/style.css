@@ -68,8 +68,13 @@
  #hero {
      margin-top: 8rem;
      padding: 0.5rem;
-     max-width: 1200px;
+     padding-bottom: 2rem;
+     /* max-width: 1200px; */
      margin: 0 auto;
+     
+     /* background: linear-gradient( to left,  rgb(236, 236, 16), rgb(248, 140, 7)); */
+     background: linear-gradient(to left, darkblue, rgb(152, 233, 152)/* , rgb(243, 243, 72)  */);
+     background-size: cover;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -87,7 +92,8 @@
      font-size: 70px;
      font-weight: 700;
      font-style: bold;
-     color: var(--azulaux);
+     color: white;
+     text-transform: uppercase;
  }
 
  .Hero-info p {
@@ -96,17 +102,24 @@
      font-size: 30px;
      padding: 25px;
      text-align: left;
+     text-transform: uppercase;
  }
 
  .hero-img {
      width: 400px;
      background: var(--secondary);
-     padding: 20px;
+     padding: 5px;
      border-radius: 8px;
      display: flex;
      flex-direction: column;
      justify-content: center;
      gap: 20px;
+ }
+
+ #btns {
+     display: flex;
+     justify-content: space-around;
+     box-shadow: #272d37;
  }
 
  #btns .more {
@@ -135,6 +148,20 @@
 
  /* fin Hero */
 
+ #slots {
+    margin-top: 35px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+ }
+ #slots .slotM img{
+    width: 200px;
+    box-shadow: inset;
+    box-shadow: #000000;
+    
+ }
  /* info */
  #productos {
      box-sizing: 350px;
