@@ -130,14 +130,14 @@
      gap: 10px;
  }
 
- #btns {
+ #hero #btns {
      display: flex;
      justify-content: flex-start;
      padding: 10px;
      gap: 5px
  }
 
- #btns .more {
+ #hero  #btns .more {
      color: whitesmoke;
      background-color: var(--secondary);
      width: 120px;
@@ -147,7 +147,7 @@
      text-align: center;
  }
 
- #btns .contact {
+ #hero #btns .contact {
      color: whitesmoke;
      background-color: var(--secondary);
      width: 120px;
