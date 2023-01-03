@@ -1,5 +1,212 @@
 /* Mediaqueries */
+@media screen and (max-width: 540px) {
+    * {
+        margin: 0;
+        padding: 0;
+        max-width: 540px;
+    }
 
+    header {
+        display: block;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    header nav .navbar .logo {
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    #hero .hero-info {
+        margin: 0 auto;
+        /* display: flex;
+        flex-direction: column;
+        justify-items: center; */
+
+    }
+
+    .hero-info h1 {
+        margin-bottom: 16px;
+        width: 540px;
+        font-style: normal;
+        font-weight: 250;
+        font-size: 44px;
+        line-height: 46px;
+    }
+
+    .hero-info p {
+       justify-content: center;
+       justify-items: center;
+        font-family: sans-serif;
+        font-weight: 100;
+        font-size: 25px;
+        color: #FFFFFF;
+        gap: 25px;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    #hero #btns {
+        margin: 15px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 444px;
+        padding: 10px;
+        gap: 20px
+    }
+
+    #hero #btns .more {
+        width: 90%;
+        padding: 1rem 1rem;
+        border-radius: 0.5rem;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #hero #btns .contact {
+        width: 90%;
+        padding: 1rem 1rem;
+        border-radius: 0.5rem;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #aboutUs .caja1 {
+        display: flex;
+        flex-direction: column;
+        column-gap: 5px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    #aboutUs {
+        display: flex;
+        flex-direction: column;
+        column-gap: 5px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    #aboutUs .displays {
+        display: flex;
+        flex-direction: row;
+        column-gap: 5px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    #aboutUs .displays {
+        display: flex;
+        flex-direction: column;
+        column-gap: 5px;
+        gap: 5px;
+        justify-content: center;
+        margin-top: 15px;
+        padding: 20px 20px;
+    }
+
+    /* WMS */
+    #aboutUs .display1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        justify-content: right;
+        background: linear-gradient(to bottom, rgb(51, 4, 128), rgb(14, 14, 104));
+        background-size: cover;
+        border: #272d37;
+        border-radius: 10px;
+        gap: 10px;
+        padding: 10px;
+        margin: 5px 5px;
+    }
+
+    #aboutUs .zeus {
+        width: 350px;
+        height: 190px;
+        display: flex;
+        gap: 5px;
+        padding: 4px;
+    }
+
+    #aboutUs .lwms {
+        padding-top: 15px;
+        width: 100px;
+
+    }
+
+    /* fin WMS */
+
+    /* Aristo */
+    #aboutUs .display2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        background: linear-gradient(to bottom, rgb(18, 0, 119), rgb(68, 10, 68), rgb(175, 6, 147));
+        background-size: cover;
+        border: #272d37;
+        border-radius: 10px;
+        gap: 10px;
+        padding: 10px;
+        margin: 5px 5px;
+    }
+
+    #aboutUs .hlx {
+        width: 350px;
+        height: 190px;
+        display: flex;
+        gap: 5px;
+        padding: 4px;
+    }
+
+    #aboutUs .aristo {
+        padding-top: 15px;
+        width: 180px;
+    }
+
+    /* fin Aristo */
+
+    /* IGT  */
+    #aboutUs .display3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        background: linear-gradient(to bottom, rgb(175, 6, 147), rgb(197, 115, 131));
+        background-size: cover;
+        border: #272d37;
+        border-radius: 10px;
+        gap: 10px;
+        padding: 10px;
+        margin: 5px 5px;
+    }
+
+    #aboutUs .lIgt {
+        width: 90px;
+        padding-top: 15px;
+
+    }
+
+    #aboutUs .igt {
+        width: 350px;
+        height: 190px;
+        display: flex;
+        gap: 5px;
+        padding: 4px;
+    }
+
+    /* Fin IGT */
+}
+
+/*mq480px*/
 @media screen and (max-width: 480px) {
     * {
         margin: 0;
@@ -227,6 +434,8 @@
 
     /* Fin IGT */
 }
+
+/*MQ375*/
 @media screen and (max-width: 375px) {
     * {
         margin: 0;
@@ -240,9 +449,9 @@
         justify-items: center;
     }
 
-    header  .navbar .logo {
+    header .logo {
         margin: 0 auto;
-        padding: 0 auto;
+
     }
 
     #hero {
