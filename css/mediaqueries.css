@@ -3,7 +3,7 @@
     * {
         margin: 0;
         padding: 0;
-        max-width: 540px;
+        max-width: 540px
     }
 
     header {
@@ -14,32 +14,30 @@
 
     header nav .navbar .logo {
         margin: 0 auto;
-        padding: 5px;
+        padding: 0px;
     }
-
-    #hero .hero-info {
+    #hero {
         margin: 0 auto;
-        /* display: flex;
+        display: flex;
         flex-direction: column;
-        justify-items: center; */
+        column-gap: 5px;
+        justify-content: center;
+        justify-items: center;
+        background-size: cover;
 
     }
+    
+    
 
     .hero-info h1 {
-        margin-bottom: 16px;
-        width: 540px;
-        font-style: normal;
         font-weight: 250;
-        font-size: 44px;
+        font-size: 38px;
         line-height: 46px;
     }
 
     .hero-info p {
-       justify-content: center;
-       justify-items: center;
-        font-family: sans-serif;
         font-weight: 100;
-        font-size: 25px;
+        font-size: 20px;
         color: #FFFFFF;
         gap: 25px;
     }
