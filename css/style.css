@@ -35,16 +35,18 @@
  }
 
  .logo {
-     width: 3rem;
-     height: 3rem;
-     padding: 1rem;
+     width: 30px;
+     height: 30px;
+     padding: 5px;
      margin: 0;
-     margin-left: 5rem;
+     margin-left: 100px;
  }
 
  .menu {
      display: flex;
-     margin-right: 5rem;
+     margin-right: 100px;
+     font-family: sans-serif;
+     font-weight: 200;
  }
 
  .menu li a {
@@ -54,6 +56,7 @@
 
  .menu li a:hover {
      color: var(--primary);
+     font-weight: 400;
  }
 
  .active {
@@ -64,11 +67,10 @@
 
  /* Hero */
  #hero {
-     margin-top: 8rem;
+     margin-top: 3rem;
      padding: 0.5rem;
-     padding-bottom: 2rem;
+     padding-bottom: 1rem;
      margin: 0 auto;
-     /* height: 280px; */
      background: linear-gradient(to bottom, #565fee, #4f69ed);
      background-size: cover;
      display: flex;
@@ -81,18 +83,22 @@
      justify-content: center;
      align-items: center;
  }
-.hero-info h4{
-    padding: 10px;
-    gap: 5px;
 
-}
+ .hero-info h4 {
+     padding: 10px;
+     gap: 5px;
+     font-family: var(--font-family);
+     font-weight: 200px;
+     font-style: light;
+ }
+
  .hero-info h1 {
      justify-content: left;
      margin-bottom: 16px;
      width: 100%;
      font-style: normal;
-     font-weight: 400;
-     font-size: 50px;
+     font-weight: 200;
+     font-size: 48px;
      line-height: 46px;
      display: flex;
      align-items: center;
@@ -102,34 +108,33 @@
  .hero-info p {
      font-family: sans-serif;
      justify-items: left;
-     font-weight: 250;
-     font-size: 24px;
+     font-weight: 150;
+     font-size: 20px;
      color: #FFFFFF;
      gap: 25px;
  }
 
  .hero-info span {
-     color: rgb(255, 255, 255);
+     font-weight: 200;
+     font-style: light;
      justify-content: center;
      gap: 5px;
  }
 
  .hero-img {
      width: 350px;
-     padding: 3px;
-     border-radius: 4px;
+     /* opacity: 75%; */
      display: flex;
      flex-direction: column;
      justify-content: center;
-     gap: 20px;
+     gap: 10px;
  }
 
  #btns {
      display: flex;
-     flex-direction: row;
-     justify-content: space-evenly;
-     padding-top: 1rem;
-     gap: 0.5rem;
+     justify-content: flex-start;
+     padding: 10px;
+     gap: 5px
  }
 
  #btns .more {
@@ -152,56 +157,178 @@
      text-align: center;
  }
 
- #btns .more a {
-     text-decoration: none;
- }
+ /*  */
 
  /* fin Hero */
 
- #slots {
-     margin-top: 35px;
-     padding: 15px;
-     display: flex;
-     flex-direction: row;
-     justify-items: center;
-     justify-content: center;
- }
-
- #slots .slotM img {
-     width: 200px;
-     box-shadow: inset;
-     box-shadow: #000000;
-
- }
-
  /* info */
  #aboutUs {
-
+     padding-top: 25px;
+     margin-top: 30px;
      display: flex;
+     background: #e2e2fa;
      justify-content: space-around;
-     gap: 25px;
-     margin-top: 20px;
+     gap: 15px;
+
  }
 
  #aboutUs .caja1 {
-     padding: 5rem;
+     padding: 25px;
      justify-content: center;
      align-items: center;
      text-align: center;
  }
 
-
  #aboutUs p {
-     color: black;
-     font-size: 25px;
+     color: rgb(78, 78, 78);
+     font-size: 16px;
+     font-style: light;
+     text-align: center;
+     gap: 15px;
+     padding-bottom: 25px;
  }
 
+ #aboutUs span {
+     color: black;
+     font-size: 26px;
+     font-style: light;
+     text-align: center;
+     gap: 15px;
+     padding-bottom: 25px;
+ }
 
+ #aboutUs h4 {
+     color: #FFFFFF;
+     font-weight: 300;
+ }
+
+ #aboutUs .displays {
+     display: flex;
+     flex-direction: row;
+     gap: 5px;
+     justify-content: center;
+     margin-top: 15px;
+     padding: 20px 20px;
+ }
+
+ /* WMS */
+ #aboutUs .display1 {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     column-gap: 10px;
+     justify-content: right;
+     /* background: #dadbdd; */
+     background: linear-gradient(to right, rgb(51, 4, 128), rgb(14, 14, 104));
+     background-size: cover;
+     border: #272d37;
+     border-radius: 10px;
+     gap: 10px;
+     padding: 10px;
+     margin: 5px 5px;
+ }
+
+ #aboutUs .zeus {
+     width: 250px;
+     display: flex;
+     gap: 5px;
+     padding: 4px;
+ }
+
+ #aboutUs .lwms {
+     width: 150px;
+
+ }
+
+ /* fin WMS */
+
+ /* Aristo */
+ #aboutUs .display2 {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     column-gap: 10px;
+     /* background: #dadbdd; */
+     background: linear-gradient(to right, rgb(18, 0, 119), rgb(68, 10, 68), rgb(175, 6, 147));
+     background-size: cover;
+     border: #272d37;
+     border-radius: 10px;
+     gap: 10px;
+     padding: 10px;
+     margin: 5px 5px;
+ }
+
+ #aboutUs .hlx {
+     width: 250px;
+     display: flex;
+     gap: 5px;
+     padding: 4px;
+ }
+
+ #aboutUs .aristo {
+     padding-top: 15px;
+     width: 200px;
+ }
+
+ /* fin Aristo */
+
+ /* IGT  */
+ #aboutUs .display3 {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     column-gap: 10px;
+     background: linear-gradient(to right, rgb(175, 6, 147), rgb(197, 115, 131));
+     background-size: cover;
+     border: #272d37;
+     border-radius: 10px;
+     gap: 10px;
+     padding: 10px;
+     margin: 5px 5px;
+ }
+
+ #aboutUs .lIgt {
+     width: 90px;
+     padding-top: 15px;
+
+ }
+
+ #aboutUs .igt {
+     width: 250px;
+     display: flex;
+     gap: 5px;
+     padding: 4px;
+ }
+
+ /* Fin IGT */
+ /*LOGOS PARNERS PARA AGREAGAR*/
+
+ /* #parners .partnrs {
+     display: flex;
+     flex-direction: row;
+     justify-items: center;
+     gap: 2px;
+     padding: 15px;
+     width: 150px;
+ } */
+ /* #parners .partnrs .logo1 {
+    width: 100px;
+ }
+ #parners .partnrs .logo2 {
+    width: 100px;
+ }
+ #parners .partnrs .logo3 {
+    width: 100px;
+ } */
+ /*FIN LOGOS PARNERS*/
  /* footer */
  footer {
-    background: #000000; 
-    padding-bottom: 15px;
-     padding-top: 40px;
+     background: #000000;
+     padding-bottom: 15px;
+     padding-top: 30px;
      margin-top: 200px;
      display: flex;
      font-weight: 150px;
