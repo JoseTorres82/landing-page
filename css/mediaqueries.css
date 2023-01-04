@@ -1,44 +1,348 @@
+/* **************************************************************************************** */
+/* ******************Lo comentado esta a modo prueba - borrar una vez chequeado *********** */
+/* **************************************************************************************** */
+/* Light mode */
+/* @media (prefers-color-scheme: light) {
+    body {
+        background-color: #000;
+        color: white;
+    }
+} */
+/* Dark mode */
+/* @media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000;
+        color: white;
+    }
+} */
 /* Mediaqueries */
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 700px) {
     * {
         margin: 0;
         padding: 0;
-        max-width: 540px
     }
 
     header {
         display: block;
         justify-content: center;
         justify-items: center;
+        align-items: center;
     }
 
     header nav .navbar .logo {
         margin: 0 auto;
         padding: 0px;
     }
+    .nav__input:checked + .menu {
+        background-color: aqua;
+    }
+    .navbar{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        margin-left: 10px;
+        padding: 15px;
+    }
+
+    .nav__label {
+        display: block;
+        cursor: pointer;
+        justify-content: space-between;
+        margin-right: 15px;
+    }
+    .menu {
+        display: flex;
+        grid-auto-flow: row;
+        gap: 5px;
+    }
+    
+    .menu ul{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background: #272d37;
+        background-size: cover;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav__input:checked+.menu {
+        clip-path: circle(100% at center);
+        transition: .1s;
+    }
+    .menu ul a {
+        width: 100%;
+        margin-top: 3px;
+        height: 3px;
+        gap: 3px;
+        background: #3b3d3f;
+    }
+
     #hero {
         margin: 0 auto;
+        padding: 0.5rem;
         display: flex;
-        flex-direction: column;
-        column-gap: 5px;
-        justify-content: center;
-        justify-items: center;
+        flex-direction: row;
+        gap: 5px;
         background-size: cover;
 
     }
-    
-    
+
+    #hero h4 {
+        font-size: 20px;
+        gap: 10px;
+        justify-content: left;
+        text-align: center;
+    }
 
     .hero-info h1 {
-        font-weight: 250;
+        font-weight: 300;
         font-size: 38px;
         line-height: 46px;
     }
 
     .hero-info p {
-        font-weight: 100;
+        font-weight: 200;
+        font-size: 25px;
+        color: #FFFFFF;
+        text-shadow: #272d37;
+        gap: 25px;
+    }
+
+    .hero-img {
+        margin-top: 90px;
+        display: flex;
+        justify-items: center;
+        width: 150px;
+        height: 100;
+    }
+
+    #hero #btns {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+        padding: 20px;
+        gap: 20px
+    }
+
+    #hero #btns .more {
+        width: 90%;
+        padding: 1rem 1rem;
+        border-radius: 0.5rem;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #hero #btns .contact {
+        width: 90%;
+        padding: 1rem 1rem;
+        border-radius: 0.5rem;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #aboutUs .caja1 {
+        display: flex;
+        flex-direction: column;
+        column-gap: 5px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    #aboutUs {
+        display: flex;
+        flex-direction: column;
+        column-gap: 5px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    #aboutUs .displays {
+        display: flex;
+        flex-direction: column;
+        column-gap: 5px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    #aboutUs .displays {
+        display: flex;
+        flex-direction: column;
+        column-gap: 5px;
+        gap: 5px;
+        justify-content: center;
+        margin-top: 10px;
+        padding: 15px 15px;
+    }
+
+    /* WMS */
+    #aboutUs .display1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        justify-content: right;
+        background: linear-gradient(to bottom, rgb(51, 4, 128), rgb(14, 14, 104));
+        background-size: cover;
+        border: #272d37;
+        border-radius: 10px;
+        gap: 10px;
+        padding: 10px;
+        margin: 5px 5px;
+    }
+
+    #aboutUs .zeus {
+        width: 350px;
+        height: 240px;
+        display: flex;
+        gap: 5px;
+        padding: 4px;
+    }
+
+    #aboutUs .lwms {
+        padding-top: 15px;
+        width: 100px;
+
+    }
+
+    /* fin WMS */
+
+    /* Aristo */
+    #aboutUs .display2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        background: linear-gradient(to bottom, rgb(18, 0, 119), rgb(68, 10, 68), rgb(175, 6, 147));
+        background-size: cover;
+        border: #272d37;
+        border-radius: 10px;
+        gap: 10px;
+        padding: 10px;
+        margin: 5px 5px;
+    }
+
+    #aboutUs .hlx {
+        width: 350px;
+        height: 240px;
+        display: flex;
+        gap: 5px;
+        padding: 4px;
+    }
+
+    #aboutUs .aristo {
+        padding-top: 15px;
+        width: 180px;
+    }
+
+    /* fin Aristo */
+
+    /* IGT  */
+    #aboutUs .display3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        background: linear-gradient(to bottom, rgb(175, 6, 147), rgb(197, 115, 131));
+        background-size: cover;
+        border: #272d37;
+        border-radius: 10px;
+        gap: 10px;
+        padding: 10px;
+        margin: 5px 5px;
+    }
+
+    #aboutUs .lIgt {
+        width: 90px;
+        padding-top: 15px;
+
+    }
+
+    #aboutUs .igt {
+        width: 350px;
+        height: 240px;
+        display: flex;
+        gap: 5px;
+        padding: 4px;
+    }
+
+    /* Fin IGT */
+}
+
+
+@media screen and (max-width: 540px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        display: block;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    header nav .navbar .logo {
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    .logo {
+        margin: 05px auto;
+        padding: 10px;
+    }
+
+    .nav__label {
+        display: block;
+        justify-items: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    #hero {
+        margin: 0 auto;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        column-gap: 5px;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        background-size: cover;
+
+    }
+
+    .hero-info h1 {
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .hero-info p {
+        font-weight: 200;
         font-size: 20px;
         color: #FFFFFF;
+        text-shadow: #272d37;
         gap: 25px;
     }
 
@@ -52,7 +356,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 444px;
         padding: 10px;
         gap: 20px
     }
@@ -209,7 +512,6 @@
     * {
         margin: 0;
         padding: 0;
-        max-width: 480px;
     }
 
     header {
@@ -244,7 +546,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 444px;
         padding: 10px;
         gap: 20px
     }
@@ -402,8 +703,9 @@
 
     /* IGT  */
     #aboutUs .display3 {
-        display: flex;
+        /*         display: flex;
         flex-direction: column;
+ */
         justify-content: center;
         align-items: center;
         column-gap: 10px;
@@ -438,7 +740,6 @@
     * {
         margin: 0;
         padding: 0;
-        max-width: 480px;
     }
 
     header {
@@ -473,7 +774,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 370px;
         padding: 10px;
         gap: 20px
     }
