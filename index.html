@@ -15,7 +15,8 @@
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mediaqueries.css">
-    <title>TR-Soluciones</title>
+    <script src="https://kit.fontawesome.com/1ed3578477.js" crossorigin="anonymous"></script>
+        <title>TR-Soluciones</title>
 </head>
 
 <body>
@@ -30,9 +31,9 @@
             <div class="menu">
                 <ul>
                     <li class="active"><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Clientes</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#servicio">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </div>
             <!-- <input type="checkbox" id="menu-check"> -->
@@ -40,7 +41,7 @@
     </header>
     <main>
         <section id="hero">
-            <div class="hero-info">
+            <div class="hero-info" id="nosotros">
                 <h4>Restaure sus slots de juego!</h4>
                 <h1>Gráficas para botones Oled.</h1>
                 <p> Reemplace los display oled quemados
@@ -49,8 +50,8 @@
                     <span><b>Archivos Descargables</b></span>
                 </p>
                 <div id="btns">
-                    <a href="#" class="more">Saber más</a>
-                    <a href="#" class="contact">Contactanos</a>
+                    <a href="#contacto" class="more">Saber más</a>
+                    <a href="#contacto" class="contact">Contactanos</a>
                 </div>
             </div>
             <div class="hero-img">
@@ -83,52 +84,88 @@
                 </div>
             </div>
         </section>
-        <section class="sombra">
+        <section id="servicio" class="sombra" >
+            <span><h2>¿Por qué elegirnos?</h2></span>
+            <div class="servicios">
+                <section class="servicio">
+                    <h3>Diseños Originales</h3>
+                    <div class="iconos">
+                        <img src="/img/icons/artist-palette-art-artistic-svgrepo-com.svg" alt="diseño">
+                    </div>
+                    <p>Nuestro equipo de diseñadores estan listos para atender sus necesidades</br>
+                        con diseños coloridos y originales para realzar la estetica de su negocio.
+                    </p>
+                </section>
 
-            <section class="servicios">
-                <div class="card">
-                    <img src="/img/icons/paleta.svg" alt="diseños">
-                </div>
-                
-                <h2>Diseños Originales</h2>
-                <hr>
-                <p>
-                    Realizamos diseños a medida con el theme de su slot de juego. </br>
-                    Combinamos su logo personal en distintas gráficas o flayers.
-                </p>
-                <div class="card">
-                    <img src="/img/icons/paleta.svg" alt="diseños">
-                </div>
-                
-                <h2>Atención personalizada</h2>
-                <hr>
-                <p>
-                    Un ejecutivo de cuentas se centrara en sus necesidades, </br>
-                    Lo acompañara en cada proceso, hasta finalizar la operación.
-                </p>
-                <div class="card">
-                    <img src="/img/icons/paleta.svg" alt="diseños">
-                </div>
-                
-                <h2>Siempre en contacto</h2>
-                <hr>
-                <p>
-                    Puede usar las diferentes vias de comunicación. </br>
-                    Complete un formulario, use la linea de whatsapp y le responderemos a la brevedad.
-                </p>
+                <section class="servicio" >
+                    <h3>Atención Personalizada</h3>
+                    <div class="iconos">
+                        <img src="/img/icons/authority-owner-decide-chief-svgrepo-com.svg" alt="attendant">
+                    </div>
+                    <p>Contara con un ejecutivo de cuenas, quien lo acompañara durante todo el proceso.</br>
+                        Atendiendo sus necesidades e inquietudes.</br></br>
+                    </p>
+                </section>
 
-
+                <section class="servicio">
+                    <h3>Medios de Pago</h3>
+                    <div class="iconos">
+                        <img src="/img/icons/executive-compensation-business-svgrepo-com.svg" alt="pay">
+                    </div>
+                    <p>
+                        Puede abonar mediante, Transferencia bancaria,Tarjeta de débito/crédito o efectivo.</br></br></br>
+                    </p>
+                </section>
+            </div>
+            <!--Fin Contenedor Servicios-->
+            <section class="formulario-contacto" id="contacto">
+                <h3>Contactanos ahora</h3>
+                <br>
+                <form action="/enviar-mensaje" method="POST">
+                    <label for="nombre">Nombre:</label><br />
+                    <input type="text" id="nombre" required name="nombre" /><br />
+                    <label for="email">Email:</label><br />
+                    <input type="email" id="email" required name="email" /><br />
+                    <label for="mensaje">Mensaje:</label><br />
+                    <textarea id="mensaje" name="mensaje"></textarea><br />
+                    <input type="submit" value="Enviar mensaje" />
+                </form>
             </section>
-
-        </section><!--Cierre Sombra  -->
-
-        <section class="contenedor__contacto">
 
         </section>
     </main>
 
-    <footer>
-        <p>Desarrollado por TR 2022</p> </br>
+    <footer class="footermod">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="/img/LOGO.png" alt="logo TR-Soluciones">
+                    </a>
+                </figure>
+
+            </div>  
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <P>Realizamos diseños a medida para slots de juegos de azar,
+                    reemplazando asi los display oled quemados, restaurando la estetica
+                    del puesto de juego de una manera rápida, economica y eficiente.</P>
+                <P>Diseños para Wms, Aristocrat, Igt y más. Versiones Descargables e impresas.</br>
+                    Trabajamos para bingos y casinos mas importantes de zona sur.</P>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="redes">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-telegram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>TR-Soluciones</b> - Todos los derechos reservados. </small>
+        </div>
     </footer>
 
 </body>
